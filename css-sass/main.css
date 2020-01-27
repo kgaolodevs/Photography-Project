@@ -1,11 +1,18 @@
 :root {
-  --color-dark: #25242a;
+  --color-primary: #6e5773;
+  --color-secondary: #d45d79;
+  --color-tertiary: #ea9085;
+  --color-primary-2: #f6eec7;
+  --color-secondary-2: #f7d695;
+  --color-tertiary-2: #347474;
   --color-light: #f4f4f4;
+  --color-light-2: #e9e2d0;
+  --color-light-3: #dbd6c8;
 }
 
 *,
 *::before,
-*:a {
+*::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -13,8 +20,8 @@
 }
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background: var(--color-dark);
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  background: url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
   color: var(--color-light);
 }
 /*# sourceMappingURL=main.css.map */
