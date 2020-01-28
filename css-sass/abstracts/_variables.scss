@@ -1,4 +1,5 @@
 :root {
+  // Colors
   --color-primary: #6e5773;
   --color-primary-dark: #392d3b;
   --color-primary-trs: #6e5773e3;
@@ -6,6 +7,8 @@
 
   --color-secondary: #d45d79;
   --color-tertiary: #ea9085;
+  --color-secondary-trs: #d45d79e0;
+  --color-tertiary-trs: #ea9185e8;
 
   --color-primary-2: #f6eec7;
   --color-secondary-2: #f7d695;
@@ -18,6 +21,9 @@
   --color-dark: #4f4e52;
   --color-dark: #3d3c3f;
   --color-dark: #25242a;
+
+  // Spacing
+  --pd: 1rem 2rem;
 
   // Screen Sizes
   $px-large: 980px;

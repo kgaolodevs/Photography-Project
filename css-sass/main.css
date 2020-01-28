@@ -5,6 +5,8 @@
   --color-primary-dark-trs: #453747ea;
   --color-secondary: #d45d79;
   --color-tertiary: #ea9085;
+  --color-secondary-trs: #d45d79e0;
+  --color-tertiary-trs: #ea9185e8;
   --color-primary-2: #f6eec7;
   --color-secondary-2: #f7d695;
   --color-tertiary-2: #347474;
@@ -14,6 +16,7 @@
   --color-dark: #4f4e52;
   --color-dark: #3d3c3f;
   --color-dark: #25242a;
+  --pd: 1rem 2rem;
 }
 
 *,
@@ -39,8 +42,8 @@ body {
   .header {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-trs)), to(var(--color-primary-dark-trs))), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
     background: linear-gradient(to bottom, var(--color-primary-trs), var(--color-primary-dark-trs)), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
-    height: 60vh;
-    padding: 0.5rem 1rem;
+    height: 70vh;
+    padding: var(--pd);
   }
   .header .nav {
     margin-bottom: 5rem;
@@ -69,7 +72,7 @@ body {
     margin: 2rem 0;
   }
   .header .title .btn {
-    border: var(--color-light) 1.5px solid;
+    border: var(--color-light) 1.2px solid;
     padding: 0.6rem 0.8rem;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -88,6 +91,33 @@ body {
   }
   .header .title .btn__icon {
     fill: var(--color-light);
+  }
+  .cards {
+    height: 50vh;
+    padding: var(--pd);
+  }
+  .cards__title {
+    border-bottom: 1.5px solid var(--color-light);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 10rem;
+    margin-top: 25%;
+  }
+  .cards__paragraph {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+  }
+  .cards__1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-trs)), to(var(--color-tertiary-trs))), url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-secondary-trs), var(--color-tertiary-trs)), url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
   }
 }
 /*# sourceMappingURL=main.css.map */

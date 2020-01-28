@@ -6,8 +6,8 @@
         var(--color-primary-dark-trs)
       ),
       url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
-    height: 60vh;
-    padding: 0.5rem 1rem;
+    height: 70vh;
+    padding: var(--pd);
 
     .nav {
       margin-bottom: 5rem;
@@ -40,7 +40,7 @@
       }
 
       .btn {
-        border: var(--color-light) 1.5px solid;
+        border: var(--color-light) 1.2px solid;
         padding: 0.6rem 0.8rem;
         display: inline-flex;
         align-items: center;
@@ -57,6 +57,36 @@
           fill: var(--color-light);
         }
       }
+    }
+  }
+
+  .cards {
+    height: 50vh;
+    padding: var(--pd);
+
+    &__title {
+      border-bottom: 1.5px solid var(--color-light);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      display: inline-flex;
+      flex-direction: column;
+      width: 10rem;
+      margin-top: 25%;
+    }
+
+    &__paragraph {
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &__1 {
+      background: linear-gradient(
+          to bottom,
+          var(--color-secondary-trs),
+          var(--color-tertiary-trs)
+        ),
+        url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
     }
   }
 }
