@@ -1,13 +1,19 @@
 :root {
   --color-primary: #6e5773;
+  --color-primary-dark: #392d3b;
+  --color-primary-trs: #6e5773e3;
+  --color-primary-dark-trs: #453747ea;
   --color-secondary: #d45d79;
   --color-tertiary: #ea9085;
   --color-primary-2: #f6eec7;
   --color-secondary-2: #f7d695;
   --color-tertiary-2: #347474;
-  --color-light: #f4f4f4;
+  --color-light: #fff;
   --color-light-2: #e9e2d0;
   --color-light-3: #dbd6c8;
+  --color-dark: #4f4e52;
+  --color-dark: #3d3c3f;
+  --color-dark: #25242a;
 }
 
 *,
@@ -15,13 +21,73 @@
 *::after {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  background: url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
   color: var(--color-light);
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-trs)), to(var(--color-primary-dark-trs))), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-primary-trs), var(--color-primary-dark-trs)), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
+    height: 60vh;
+    padding: 0.5rem 1rem;
+  }
+  .header .nav {
+    margin-bottom: 5rem;
+  }
+  .header .nav__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 0.2rem 0.2rem;
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 0.38rem;
+  }
+  .header .title__main {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    font-size: 1.85rem;
+    letter-spacing: 0.1rem;
+    border-bottom: 2.5px solid var(--color-light);
+  }
+  .header .title__paragraph {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    letter-spacing: 0.18rem;
+    margin: 2rem 0;
+  }
+  .header .title .btn {
+    border: var(--color-light) 1.5px solid;
+    padding: 0.6rem 0.8rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .title .btn__button {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    color: var(--color-light);
+    letter-spacing: 0.2rem;
+    font-weight: 550;
+    margin-right: 0.6rem;
+  }
+  .header .title .btn__icon {
+    fill: var(--color-light);
+  }
 }
 /*# sourceMappingURL=main.css.map */

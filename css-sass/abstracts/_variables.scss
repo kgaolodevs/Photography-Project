@@ -1,5 +1,9 @@
 :root {
   --color-primary: #6e5773;
+  --color-primary-dark: #392d3b;
+  --color-primary-trs: #6e5773e3;
+  --color-primary-dark-trs: #453747ea;
+
   --color-secondary: #d45d79;
   --color-tertiary: #ea9085;
 
@@ -7,7 +11,16 @@
   --color-secondary-2: #f7d695;
   --color-tertiary-2: #347474;
 
-  --color-light: #f4f4f4;
+  --color-light: #fff;
   --color-light-2: #e9e2d0;
   --color-light-3: #dbd6c8;
+
+  --color-dark: #4f4e52;
+  --color-dark: #3d3c3f;
+  --color-dark: #25242a;
+
+  // Screen Sizes
+  $px-large: 980px;
+  $px-medium: 735px;
+  $px-small: 480px;
 }

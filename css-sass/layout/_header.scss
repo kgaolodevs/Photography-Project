@@ -1,0 +1,62 @@
+@media only screen and (max-width: 480px) {
+  .header {
+    background: linear-gradient(
+        to bottom,
+        var(--color-primary-trs),
+        var(--color-primary-dark-trs)
+      ),
+      url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
+    height: 60vh;
+    padding: 0.5rem 1rem;
+
+    .nav {
+      margin-bottom: 5rem;
+      &__logo {
+        display: inline-block;
+        text-transform: uppercase;
+        background: var(--color-light);
+        color: var(--color-dark);
+        padding: 0.2rem 0.2rem;
+        font-size: 0.78rem;
+        font-weight: bold;
+        letter-spacing: 0.38rem;
+      }
+    }
+
+    .title {
+      &__main {
+        margin: 2rem 0;
+        padding: 1rem 0;
+        font-size: 1.85rem;
+        letter-spacing: 0.1rem;
+        border-bottom: 2.5px solid var(--color-light);
+      }
+
+      &__paragraph {
+        text-transform: uppercase;
+        font-size: 0.74rem;
+        letter-spacing: 0.18rem;
+        margin: 2rem 0;
+      }
+
+      .btn {
+        border: var(--color-light) 1.5px solid;
+        padding: 0.6rem 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        &__button {
+          font-size: 0.76rem;
+          text-transform: uppercase;
+          color: var(--color-light);
+          letter-spacing: 0.2rem;
+          font-weight: 550;
+          margin-right: 0.6rem;
+        }
+
+        &__icon {
+          fill: var(--color-light);
+        }
+      }
+    }
+  }
+}
