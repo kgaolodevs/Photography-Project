@@ -98,6 +98,38 @@
           ),
           url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
       }
+      &__3 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-tertiary-3-trs),
+            var(--color-tertiary-3-trs)
+          ),
+          url(/Photography-Project/assets/img/img-4.jpg) no-repeat top/cover;
+      }
+      &__4 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-tertiary-4-trs),
+            var(--color-tertiary-4-trs)
+          ),
+          url(/Photography-Project/assets/img/img-5.jpg) no-repeat top/cover;
+      }
+      &__5 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-tertiary-5-trs),
+            var(--color-tertiary-5-trs)
+          ),
+          url(/Photography-Project/assets/img/img-6.jpg) no-repeat bottom/cover;
+      }
+      &__6 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-tertiary-6-trs),
+            var(--color-tertiary-6-trs)
+          ),
+          url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
+      }
     }
   }
 }

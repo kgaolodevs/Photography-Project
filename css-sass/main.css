@@ -12,6 +12,10 @@
   --color-tertiary-2: #347474;
   --color-secondary-2-trs: #e6c584e8;
   --color-tertiary-2-trs: #347474e0;
+  --color-tertiary-3-trs: #d6254ee3;
+  --color-tertiary-4-trs: #9ece60d8;
+  --color-tertiary-5-trs: #5b58b8e3;
+  --color-tertiary-6-trs: #cfb495e7;
   --color-light: #fff;
   --color-light-2: #000000;
   --color-light-3: #dbd6c8;
@@ -124,6 +128,22 @@ body {
   .section .cards__2 {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-2-trs)), to(var(--color-secondary-2-trs))), url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
     background: linear-gradient(to bottom, var(--color-secondary-2-trs), var(--color-secondary-2-trs)), url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
+  }
+  .section .cards__3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-tertiary-3-trs)), to(var(--color-tertiary-3-trs))), url(/Photography-Project/assets/img/img-4.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-tertiary-3-trs), var(--color-tertiary-3-trs)), url(/Photography-Project/assets/img/img-4.jpg) no-repeat top/cover;
+  }
+  .section .cards__4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-tertiary-4-trs)), to(var(--color-tertiary-4-trs))), url(/Photography-Project/assets/img/img-5.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-tertiary-4-trs), var(--color-tertiary-4-trs)), url(/Photography-Project/assets/img/img-5.jpg) no-repeat top/cover;
+  }
+  .section .cards__5 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-tertiary-5-trs)), to(var(--color-tertiary-5-trs))), url(/Photography-Project/assets/img/img-6.jpg) no-repeat bottom/cover;
+    background: linear-gradient(to bottom, var(--color-tertiary-5-trs), var(--color-tertiary-5-trs)), url(/Photography-Project/assets/img/img-6.jpg) no-repeat bottom/cover;
+  }
+  .section .cards__6 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-tertiary-6-trs)), to(var(--color-tertiary-6-trs))), url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
+    background: linear-gradient(to bottom, var(--color-tertiary-6-trs), var(--color-tertiary-6-trs)), url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
   }
 }
 /*# sourceMappingURL=main.css.map */
