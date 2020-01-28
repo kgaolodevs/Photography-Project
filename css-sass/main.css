@@ -10,8 +10,10 @@
   --color-primary-2: #f6eec7;
   --color-secondary-2: #f7d695;
   --color-tertiary-2: #347474;
+  --color-secondary-2-trs: #e6c584e8;
+  --color-tertiary-2-trs: #347474e0;
   --color-light: #fff;
-  --color-light-2: #e9e2d0;
+  --color-light-2: #000000;
   --color-light-3: #dbd6c8;
   --color-dark: #4f4e52;
   --color-dark: #3d3c3f;
@@ -92,11 +94,11 @@ body {
   .header .title .btn__icon {
     fill: var(--color-light);
   }
-  .cards {
+  .section .cards {
     height: 50vh;
     padding: var(--pd);
   }
-  .cards__title {
+  .section .cards__title {
     border-bottom: 1.5px solid var(--color-light);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -110,14 +112,18 @@ body {
     width: 10rem;
     margin-top: 25%;
   }
-  .cards__paragraph {
+  .section .cards__paragraph {
     text-transform: uppercase;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
   }
-  .cards__1 {
+  .section .cards__1 {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-trs)), to(var(--color-tertiary-trs))), url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
     background: linear-gradient(to bottom, var(--color-secondary-trs), var(--color-tertiary-trs)), url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
+  }
+  .section .cards__2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-2-trs)), to(var(--color-secondary-2-trs))), url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-secondary-2-trs), var(--color-secondary-2-trs)), url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
   }
 }
 /*# sourceMappingURL=main.css.map */

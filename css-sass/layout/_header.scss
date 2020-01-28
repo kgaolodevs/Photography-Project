@@ -60,33 +60,44 @@
     }
   }
 
-  .cards {
-    height: 50vh;
-    padding: var(--pd);
+  .section {
+    .cards {
+      height: 50vh;
+      padding: var(--pd);
 
-    &__title {
-      border-bottom: 1.5px solid var(--color-light);
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
-      display: inline-flex;
-      flex-direction: column;
-      width: 10rem;
-      margin-top: 25%;
-    }
+      &__title {
+        border-bottom: 1.5px solid var(--color-light);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        display: inline-flex;
+        flex-direction: column;
+        width: 10rem;
+        margin-top: 25%;
+      }
 
-    &__paragraph {
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      letter-spacing: 0.1rem;
-    }
+      &__paragraph {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+      }
 
-    &__1 {
-      background: linear-gradient(
-          to bottom,
-          var(--color-secondary-trs),
-          var(--color-tertiary-trs)
-        ),
-        url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
+      &__1 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-secondary-trs),
+            var(--color-tertiary-trs)
+          ),
+          url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
+      }
+
+      &__2 {
+        background: linear-gradient(
+            to bottom,
+            var(--color-secondary-2-trs),
+            var(--color-secondary-2-trs)
+          ),
+          url(/Photography-Project/assets/img/img-3.jpg) no-repeat top/cover;
+      }
     }
   }
 }
