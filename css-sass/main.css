@@ -242,5 +242,37 @@ body {
   .form .btn--clear:focus {
     background: var(--color-tertiary-trs);
   }
+  .contact {
+    background: var(--color-primary-dark);
+    padding: 2rem 0;
+  }
+  .contact__group {
+    border-top: 1.5px solid var(--color-primary-dark-trs);
+    padding: 3rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__icon {
+    fill: var(--color-primary-dark);
+    background: var(--color-light);
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  .contact__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .contact__content {
+    line-height: 1.8rem;
+  }
+  .contact__link, .contact__link:link, .contact__link:visited {
+    color: var(--color-light);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--color-light);
+  }
 }
 /*# sourceMappingURL=main.css.map */
