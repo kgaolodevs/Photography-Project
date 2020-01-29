@@ -143,4 +143,53 @@
       }
     }
   }
+
+  .form {
+    background: var(--color-primary-dark);
+    padding: 2.5rem 2rem;
+
+    &__title {
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__input {
+      background: var(--color-primary-dark-trs);
+      border: none;
+      padding: 0.7rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      color: var(--color-light);
+      font-size: 1rem;
+
+      &:focus {
+        outline: 3px solid #b87cc5;
+        color: var(--color-light);
+        font-size: inherit;
+      }
+    }
+
+    &__message {
+      height: 8rem;
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .btn--white {
+      @include button-white;
+      margin-right: 0.8rem;
+      &:focus {
+        background: var(--color-tertiary-trs);
+      }
+    }
+
+    .btn--clear {
+      @include button-basic;
+      &:focus {
+        background: var(--color-tertiary-trs);
+      }
+    }
+  }
 }

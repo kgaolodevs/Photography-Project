@@ -86,6 +86,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: transparent;
   }
   .header .title .btn__button {
     font-size: 0.76rem;
@@ -170,6 +171,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: transparent;
   }
   .section .cards__7 .btn__button {
     font-size: 0.76rem;
@@ -181,6 +183,64 @@ body {
   }
   .section .cards__7 .btn__icon {
     fill: var(--color-light);
+  }
+  .form {
+    background: var(--color-primary-dark);
+    padding: 2.5rem 2rem;
+  }
+  .form__title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .form__input {
+    background: var(--color-primary-dark-trs);
+    border: none;
+    padding: 0.7rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    color: var(--color-light);
+    font-size: 1rem;
+  }
+  .form__input:focus {
+    outline: 3px solid #b87cc5;
+    color: var(--color-light);
+    font-size: inherit;
+  }
+  .form__message {
+    height: 8rem;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .form .btn--white {
+    border: var(--color-light) 1.2px solid;
+    padding: 1rem;
+    background: transparent;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    color: var(--color-light);
+    letter-spacing: 0.2rem;
+    font-weight: 550;
+    background: var(--color-light);
+    color: var(--color-primary-dark);
+    margin-right: 0.8rem;
+  }
+  .form .btn--white:focus {
+    background: var(--color-tertiary-trs);
+  }
+  .form .btn--clear {
+    border: var(--color-light) 1.2px solid;
+    padding: 1rem;
+    background: transparent;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    color: var(--color-light);
+    letter-spacing: 0.2rem;
+    font-weight: 550;
+  }
+  .form .btn--clear:focus {
+    background: var(--color-tertiary-trs);
   }
 }
 /*# sourceMappingURL=main.css.map */
