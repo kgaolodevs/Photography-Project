@@ -1,8 +1,8 @@
 :root {
   --color-primary: #6e5773;
   --color-primary-dark: #392d3b;
-  --color-primary-trs: #6e5773e3;
-  --color-primary-dark-trs: #453747ea;
+  --color-primary-trs: #6e5773e8;
+  --color-primary-dark-trs: #453747f5;
   --color-secondary: #d45d79;
   --color-tertiary: #ea9085;
   --color-secondary-trs: #d45d79e0;
@@ -113,7 +113,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 10rem;
+    width: 11rem;
     margin-top: 25%;
   }
   .section .cards__paragraph {
@@ -144,6 +144,43 @@ body {
   .section .cards__6 {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-tertiary-6-trs)), to(var(--color-tertiary-6-trs))), url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
     background: linear-gradient(to bottom, var(--color-tertiary-6-trs), var(--color-tertiary-6-trs)), url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
+  }
+  .section .cards__7 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-dark-trs)), to(var(--color-primary-dark-trs)));
+    background: linear-gradient(to bottom, var(--color-primary-dark-trs), var(--color-primary-dark-trs));
+    height: 60vh;
+  }
+  .section .cards__7 .cards__title {
+    width: 9.5rem;
+    border-bottom: 2.5px solid var(--color-light);
+    margin: 2rem 0 2rem 0;
+  }
+  .section .cards__7 .cards__paragraph {
+    text-transform: none;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+  .section .cards__7 .btn {
+    border: var(--color-light) 1.2px solid;
+    padding: 0.6rem 0.8rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section .cards__7 .btn__button {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    color: var(--color-light);
+    letter-spacing: 0.2rem;
+    font-weight: 550;
+    margin-right: 0.6rem;
+  }
+  .section .cards__7 .btn__icon {
+    fill: var(--color-light);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -40,22 +40,7 @@
       }
 
       .btn {
-        border: var(--color-light) 1.2px solid;
-        padding: 0.6rem 0.8rem;
-        display: inline-flex;
-        align-items: center;
-        &__button {
-          font-size: 0.76rem;
-          text-transform: uppercase;
-          color: var(--color-light);
-          letter-spacing: 0.2rem;
-          font-weight: 550;
-          margin-right: 0.6rem;
-        }
-
-        &__icon {
-          fill: var(--color-light);
-        }
+        @include button;
       }
     }
   }
@@ -71,7 +56,7 @@
         margin-bottom: 1rem;
         display: inline-flex;
         flex-direction: column;
-        width: 10rem;
+        width: 11rem;
         margin-top: 25%;
       }
 
@@ -129,6 +114,32 @@
             var(--color-tertiary-6-trs)
           ),
           url(/Photography-Project/assets/img/img-7.jpg) no-repeat bottom/cover;
+      }
+      &__7 {
+        background: linear-gradient(
+          to bottom,
+          var(--color-primary-dark-trs),
+          var(--color-primary-dark-trs)
+        );
+
+        height: 60vh;
+
+        .cards__title {
+          width: 9.5rem;
+          border-bottom: 2.5px solid var(--color-light);
+          margin: 2rem 0 2rem 0;
+        }
+
+        .cards__paragraph {
+          text-transform: none;
+          font-size: 1rem;
+          letter-spacing: 0.1rem;
+          margin-bottom: 2rem;
+        }
+
+        .btn {
+          @include button;
+        }
       }
     }
   }
