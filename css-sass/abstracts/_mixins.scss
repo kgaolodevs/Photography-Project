@@ -1,3 +1,18 @@
+@mixin navigation {
+  margin-bottom: 5rem;
+  &__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 0.2rem 0.2rem;
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 0.38rem;
+    text-decoration: none;
+  }
+}
+
 @mixin button {
   border: var(--color-light) 1.2px solid;
   padding: 0.6rem 0.8rem;

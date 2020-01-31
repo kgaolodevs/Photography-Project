@@ -104,6 +104,19 @@ body {
   .section .cards {
     height: 50vh;
     padding: var(--pd);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .section .cards__title {
     border-bottom: 1.5px solid var(--color-light);
@@ -117,12 +130,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 11rem;
-    margin-top: 25%;
   }
   .section .cards__paragraph {
-    text-transform: uppercase;
-    font-size: 0.7rem;
     letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
   }
   .section .cards__1 {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-trs)), to(var(--color-tertiary-trs))), url(/Photography-Project/assets/img/img-2.jpg) no-repeat top/cover;
@@ -152,17 +163,6 @@ body {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-dark-trs)), to(var(--color-primary-dark-trs)));
     background: linear-gradient(to bottom, var(--color-primary-dark-trs), var(--color-primary-dark-trs));
     height: 62vh;
-  }
-  .section .cards__7 .cards__title {
-    width: 9.5rem;
-    border-bottom: 2.5px solid var(--color-light);
-    margin: 2rem 0 2rem 0;
-  }
-  .section .cards__7 .cards__paragraph {
-    text-transform: none;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 2rem;
   }
   .section .cards__7 .btn {
     border: var(--color-light) 1.2px solid;
@@ -308,6 +308,30 @@ body {
     text-decoration: none;
     border-bottom: dotted 1px var(--color-primary-trs);
     color: inherit;
+  }
+  .landing .landing-header {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-trs)), to(var(--color-secondary-trs))), url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;
+    background: linear-gradient(to bottom, var(--color-secondary-trs), var(--color-secondary-trs)), url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;
+    height: 50vh;
+    padding: var(--pd);
+  }
+  .landing .cards__title {
+    width: auto;
+  }
+  .landing .section-1 .image {
+    background: url(/Photography-Project/assets/img/img-9.jpg) no-repeat center/cover;
+    height: 70vh;
+  }
+  .landing .section-2 .image {
+    background: url(/Photography-Project/assets/img/img-10.jpg) no-repeat center/cover;
+    height: 70vh;
+  }
+  .landing .section-3 .image {
+    background: url(/Photography-Project/assets/img/img-11.jpg) no-repeat bottom/cover;
+    height: 70vh;
+  }
+  .landing .btn__button {
+    margin-left: 0.6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

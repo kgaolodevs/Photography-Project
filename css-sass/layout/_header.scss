@@ -10,18 +10,7 @@
     padding: var(--pd);
 
     .nav {
-      margin-bottom: 5rem;
-      &__logo {
-        display: inline-block;
-        text-transform: uppercase;
-        background: var(--color-light);
-        color: var(--color-dark);
-        padding: 0.2rem 0.2rem;
-        font-size: 0.78rem;
-        font-weight: bold;
-        letter-spacing: 0.38rem;
-        text-decoration: none;
-      }
+      @include navigation;
     }
 
     .title {
@@ -50,6 +39,10 @@
     .cards {
       height: 50vh;
       padding: var(--pd);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
 
       &__title {
         border-bottom: 1.5px solid var(--color-light);
@@ -58,13 +51,11 @@
         display: inline-flex;
         flex-direction: column;
         width: 11rem;
-        margin-top: 25%;
       }
 
       &__paragraph {
-        text-transform: uppercase;
-        font-size: 0.7rem;
         letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
       }
 
       &__1 {
@@ -124,19 +115,6 @@
         );
 
         height: 62vh;
-
-        .cards__title {
-          width: 9.5rem;
-          border-bottom: 2.5px solid var(--color-light);
-          margin: 2rem 0 2rem 0;
-        }
-
-        .cards__paragraph {
-          text-transform: none;
-          font-size: 1rem;
-          letter-spacing: 0.1rem;
-          margin-bottom: 2rem;
-        }
 
         .btn {
           @include button;
@@ -252,6 +230,54 @@
         text-decoration: none;
         border-bottom: dotted 1px var(--color-primary-trs);
         color: inherit;
+      }
+    }
+  }
+
+  // Landing Page
+  .landing {
+    .landing-header {
+      background: linear-gradient(
+          to bottom,
+          var(--color-secondary-trs),
+          var(--color-secondary-trs)
+        ),
+        url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;
+      height: 50vh;
+      padding: var(--pd);
+    }
+
+    .cards {
+      &__title {
+        width: auto;
+      }
+    }
+
+    .section-1 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-9.jpg) no-repeat
+          center/cover;
+        height: 70vh;
+      }
+    }
+    .section-2 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-10.jpg) no-repeat
+          center/cover;
+        height: 70vh;
+      }
+    }
+    .section-3 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-11.jpg) no-repeat
+          bottom/cover;
+        height: 70vh;
+      }
+    }
+
+    .btn {
+      &__button {
+        margin-left: 0.6rem;
       }
     }
   }
