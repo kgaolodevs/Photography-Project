@@ -1,3 +1,26 @@
 @media only screen and (max-width: 480px) {
   // Generic Page
+  .generic-header {
+    background: var(--color-primary-dark);
+    height: auto;
+    border-bottom: 1.5px solid var(--color-primary-dark-trs);
+
+    .title {
+      &__main {
+        width: 7.5rem;
+        margin-top: -2rem;
+      }
+
+      .image {
+        background: url(/Photography-Project/assets/img/img-12.jpg) no-repeat
+          center/cover;
+        height: 25vh;
+      }
+
+      &__paragraph {
+        text-transform: none;
+        font-size: 1rem;
+      }
+    }
+  }
 }

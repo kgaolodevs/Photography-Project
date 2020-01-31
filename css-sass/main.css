@@ -1,6 +1,7 @@
 :root {
   --color-primary: #6e5773;
   --color-primary-dark: #392d3b;
+  --color-primary-darkest: #2e2430;
   --color-primary-trs: #6e5773e8;
   --color-primary-dark-trs: #453747f5;
   --color-secondary: #d45d79;
@@ -308,6 +309,26 @@ body {
     text-decoration: none;
     border-bottom: dotted 1px var(--color-primary-trs);
     color: inherit;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .generic-header {
+    background: var(--color-primary-dark);
+    height: auto;
+    border-bottom: 1.5px solid var(--color-primary-dark-trs);
+  }
+  .generic-header .title__main {
+    width: 7.5rem;
+    margin-top: -2rem;
+  }
+  .generic-header .title .image {
+    background: url(/Photography-Project/assets/img/img-12.jpg) no-repeat center/cover;
+    height: 25vh;
+  }
+  .generic-header .title__paragraph {
+    text-transform: none;
+    font-size: 1rem;
   }
 }
 
