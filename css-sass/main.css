@@ -309,6 +309,9 @@ body {
     border-bottom: dotted 1px var(--color-primary-trs);
     color: inherit;
   }
+}
+
+@media only screen and (max-width: 480px) {
   .landing .landing-header {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-secondary-trs)), to(var(--color-secondary-trs))), url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;
     background: linear-gradient(to bottom, var(--color-secondary-trs), var(--color-secondary-trs)), url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;

@@ -1,0 +1,51 @@
+@media only screen and (max-width: 480px) {
+  // Landing Page
+  .landing {
+    .landing-header {
+      background: linear-gradient(
+          to bottom,
+          var(--color-secondary-trs),
+          var(--color-secondary-trs)
+        ),
+        url(/Photography-Project/assets/img/img-8.jpg) no-repeat top/cover;
+      height: 50vh;
+      padding: var(--pd);
+    }
+
+    .cards {
+      &__title {
+        width: auto;
+      }
+    }
+
+    .section-1 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-9.jpg) no-repeat
+          center/cover;
+        height: 70vh;
+      }
+    }
+
+    .section-2 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-10.jpg) no-repeat
+          center/cover;
+        height: 70vh;
+      }
+    }
+
+    .section-3 {
+      .image {
+        background: url(/Photography-Project/assets/img/img-11.jpg) no-repeat
+          bottom/cover;
+        height: 70vh;
+      }
+    }
+
+    .btn {
+      &__button {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+}
