@@ -8,6 +8,17 @@
       url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
     height: 70vh;
     padding: var(--pd);
+    position: relative;
+
+    .bar {
+      background: var(--color-primary-dark);
+      position: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 9vh;
+      width: 100vw;
+    }
 
     .nav {
       @include navigation;
@@ -89,12 +100,12 @@
         }
 
         &__toggler:checked ~ .menu > div {
-          transform: scale(1);
-          transition-duration: 0.75s;
+          visibility: visible;
+          // transition-duration: 0.4s;
         }
         &__toggler:checked ~ .menu > div > div {
           opacity: 1;
-          transition: opacity 0.4s ease 0.4s;
+          // transition: opacity 0.4s ease;
         }
       }
 
@@ -119,8 +130,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.5s ease;
-        transform: scale(0);
+        transition: all 0.24s ease;
+        // transform: scale(0);
+        transition: opacity 5s ease-in-out;
       }
 
       .menu > div > div {
@@ -128,7 +140,7 @@
         max-width: 90vw;
         max-height: 100vh;
         opacity: 0;
-        transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease-in-out;
       }
 
       .menu > div > div > ul > li {
