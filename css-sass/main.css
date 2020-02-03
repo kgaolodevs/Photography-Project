@@ -62,6 +62,9 @@ body {
     height: 9vh;
     width: 100vw;
   }
+  .header .bar__text {
+    visibility: hidden;
+  }
   .header .nav {
     margin-bottom: 5rem;
     position: fixed;
@@ -513,7 +516,7 @@ body {
   .header {
     background: -webkit-gradient(linear, left top, left bottom, from(var(--color-primary-trs)), to(var(--color-primary-dark-trs))), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
     background: linear-gradient(to bottom, var(--color-primary-trs), var(--color-primary-dark-trs)), url(/Photography-Project/assets/img/img-1.jpg) no-repeat top/cover;
-    height: 70vh;
+    height: 50vh;
     padding: var(--pd);
     position: relative;
   }
@@ -525,6 +528,21 @@ body {
     left: 0;
     height: 9vh;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 4rem 0.22rem 7rem;
+  }
+  .header .bar__text {
+    text-transform: uppercase;
+    letter-spacing: 0.28rem;
+    font-size: 0.8rem;
   }
   .header .nav {
     margin-bottom: 5rem;
@@ -725,7 +743,17 @@ body {
     margin-top: 1.3rem;
   }
   .header .title {
-    margin-top: 25%;
+    margin-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header .title__main {
     margin: 2rem 0;
@@ -738,7 +766,7 @@ body {
     text-transform: uppercase;
     font-size: 0.74rem;
     letter-spacing: 0.18rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
   .header .title .btn {
     border: var(--color-light) 1.2px solid;
@@ -751,6 +779,8 @@ body {
             align-items: center;
     background: transparent;
     text-decoration: none;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .header .title .btn__button {
     font-size: 0.76rem;
