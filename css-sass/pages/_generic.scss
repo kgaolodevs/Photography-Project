@@ -24,3 +24,29 @@
     }
   }
 }
+
+@media only screen and (min-width: 481px) {
+  // Generic Page
+  .generic-header {
+    background: var(--color-primary-dark);
+    height: auto;
+    border-bottom: 1.5px solid var(--color-primary-dark-trs);
+
+    .title {
+      &__main {
+        width: 7.5rem;
+      }
+
+      .image {
+        background: url(/Photography-Project/assets/img/img-12.jpg) no-repeat
+          center/cover;
+        height: 25vh;
+      }
+
+      &__paragraph {
+        text-transform: none;
+        font-size: 1rem;
+      }
+    }
+  }
+}
