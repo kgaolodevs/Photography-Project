@@ -743,7 +743,7 @@ body {
     margin-top: 1.3rem;
   }
   .header .title {
-    margin-top: 3%;
+    margin-top: 7%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1078,6 +1078,9 @@ body {
   }
   .landing .cards__title {
     width: auto;
+  }
+  .landing .title2 {
+    margin-top: 15%;
   }
   .landing .section-1 .image {
     background: url(/Photography-Project/assets/img/img-9.jpg) no-repeat center/cover;
