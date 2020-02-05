@@ -70,10 +70,6 @@
       }
     }
 
-    .title2 {
-      margin-top: 15%;
-    }
-
     .section-1 {
       .image {
         background: url(/Photography-Project/assets/img/img-9.jpg) no-repeat
@@ -102,6 +98,15 @@
       &__button {
         margin-left: 0.6rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 735px) {
+  // Landing Page
+  .landing {
+    .landing-header {
+      height: 70vh;
     }
   }
 }
