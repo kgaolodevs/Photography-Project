@@ -194,6 +194,7 @@
       height: 100%;
       width: 100%;
       display: flex;
+      justify-content: center;
       align-items: center;
       .title {
         // margin-top: 25%;
@@ -437,7 +438,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 9vh;
+      height: 7vh;
       width: 100vw;
       display: flex;
       justify-content: space-between;
@@ -447,12 +448,14 @@
         text-transform: uppercase;
         letter-spacing: 0.28rem;
         font-size: 0.8rem;
+        margin-top: 0.2rem;
       }
     }
 
     .nav {
       @include navigation;
       position: fixed;
+      display: flex;
 
       .menu-wrap {
         position: fixed;
@@ -892,6 +895,10 @@
       &__3 {
         grid-column: 1 / span 2;
       }
+
+      // &__4 {
+      //   grid-column: 2 / span 1;
+      // }
 
       &__6 {
         grid-column: 2 / span 2;
